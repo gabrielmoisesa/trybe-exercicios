@@ -1,4 +1,4 @@
-# Meu repositório de exercícios
+# Meu repositório de exercícios Trybe
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por mim, _[Gabriel Moises Alves](LinkDoSeuLinkedinAqui)_ enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀
 
