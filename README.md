@@ -1,4 +1,4 @@
-# Meu repositório de exercícios <span style="color:green">Trybe</span>
+# Meu repositório de exercícios Trybe
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[mim](LinkDoSeuLinkedinAqui)_ enquanto estudava na [Trybe](https://www.betrybe.com/) 🚀
 
