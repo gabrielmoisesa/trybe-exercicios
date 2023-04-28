@@ -9,3 +9,7 @@ ol:hover {
 li:active {
     font-family: 'Bruno Ace SC', cursive;
 }
+
+ol, ul {
+    list-style: none;
+}
