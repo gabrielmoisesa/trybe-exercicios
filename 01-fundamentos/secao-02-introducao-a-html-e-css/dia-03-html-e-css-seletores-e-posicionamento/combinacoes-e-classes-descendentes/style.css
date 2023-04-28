@@ -35,4 +35,29 @@ li em {
     background-color: pink;
 }
 
+#aliados li a:hover {
+    font-weight: bolder;
+}
+
+#aliados li a:hover[href*="stackoverflow"] {
+    color: orange;
+}
+
+#aliados li a:hover[href*="w3schools"] {
+    color: green;
+}
+
+#aliados li a:hover[href*="developer.mozilla.org"] {
+    color: black;
+}
+
+#aliados li a:hover[href*="devdocs"] {
+    color: yellow;
+}
+
+#aliados li a:hover[href*="trybe"] {
+    color: green;
+}
+
+
 
