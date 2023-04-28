@@ -21,3 +21,10 @@ div:nth-of-type(4) {
 div:nth-of-type(5) {
     background-color: lightgrey;
 }
+
+h3 {
+    color: slategray;
+    font-size: 22px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
