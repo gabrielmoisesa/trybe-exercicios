@@ -26,3 +26,13 @@ li {
 li em {
     font-weight: bolder;
 }
+
+#linguagens li:not(:nth-child(n + 4)) {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+
