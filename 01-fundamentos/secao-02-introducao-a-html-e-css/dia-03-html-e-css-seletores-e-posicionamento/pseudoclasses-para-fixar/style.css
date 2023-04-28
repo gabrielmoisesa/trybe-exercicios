@@ -4,10 +4,12 @@ div:hover {
 
 div:nth-of-type(1) {
     background-color: blue ;
+    color: slategray;
 }
 
 div:nth-of-type(2) {
     background-color: purple ;
+    font-size: 19px;
 }
 
 div:nth-of-type(3) {
@@ -17,19 +19,14 @@ div:nth-of-type(3) {
 
 div:nth-of-type(4) {
     background-color: darkgreen;
+    font-family: sans-serif;
 }
 
 div:nth-of-type(5) {
     background-color: lightgrey;
+    font-style: normal;
 }
 
 div:nth-child(odd) h3 {
     font-style: italic;
-}
-
-h3 {
-    color: slategray;
-    font-size: 22px;
-    font-style: oblique;
-    font-family: Arial, Helvetica, sans-serif;
 }
