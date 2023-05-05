@@ -14,9 +14,9 @@ console.log(adicionaCliente('Renato'));
 console.log(clientesTrybeBank);
 
 // Remove cliente
-let clienteEncontrado = false;
-
 function removeCliente(cliente) {
+    let clienteEncontrado = false;
+
     if (typeof cliente === 'string') {
         for (let index = 0; index < removeCliente.length; index += 1) {
             if (cliente === clientesTrybeBank[index]) {
