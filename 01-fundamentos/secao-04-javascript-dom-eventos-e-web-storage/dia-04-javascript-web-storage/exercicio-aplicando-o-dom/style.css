@@ -1,5 +1,6 @@
 body {
     margin: 10px;
+    background-color: white;
   }
   .preferences {
     display: flex;
@@ -7,6 +8,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border: 1px solid green;
+    background-color: white;
   }
   .options {
     display: flex;
@@ -31,4 +33,10 @@ body {
   }
   .paragraph {
     display: flex;
+  }
+  #header {
+    background-color: green;
+  }
+  #title {
+    color: black;
   }
