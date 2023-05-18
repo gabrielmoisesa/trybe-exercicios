@@ -90,6 +90,8 @@ window.onload = () => {
         if (lineHeight) setLineHeight(lineHeight)
         let fontFamily = localStorage.getItem("fontFamily")
         if (fontFamily) setFontFamily(fontFamily)
+        let pageBackgroundColor = localStorage.getItem("pageBackgroundColor")
+        if (pageBackgroundColor) setPageBackgroundColor(backgroundColor)
     }
     initialize()
 }
