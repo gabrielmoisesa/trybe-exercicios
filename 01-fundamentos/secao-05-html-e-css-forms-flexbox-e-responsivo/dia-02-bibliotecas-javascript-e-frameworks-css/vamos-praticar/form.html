@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand1">Trybe Travel</div>
+    <ul class="navbar-menu nav-tabs">
+      <li><a class="nav-link active" href="">Início</a></li>
+      <li><a class="nav-link" href="#">Sobre</a></li>
+      <li><a class="nav-link" href="#">Serviços</a></li>
+      <li><a class="nav-link" href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <h1 id="title">Formulário Trybe Travel</h1>
+  <form action="" id="main-form">
+    <div id="forms-layout">
+      <div id="forms-layout2">
+        <div class="mb-3">
+          <label for="fullName">
+            <p>Nome Completo</p>
+            <input class="form-control form-control-sm" type="text" id="fullName" maxlength="40" placeholder="Digite seu nome completo">
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="email">
+            <p>E-mail</p>
+            <input type="email" class="form-control form-control-sm" id="email" maxlength="50" placeholder="Digite seu e-mail">
+          </label>
+        </div>
+        <div class="mb-3" class="form-check">
+            <p>Destino Preferido</p>
+            <label for="place1">
+              <input class="form-check-input" type="radio" name="destinations" id="place1"> Cidade
+            </label>
+            <label for="place2">
+              <input class="form-check-input" type="radio" name="destinations" id="place2"> Campo
+            </label>
+            <label for="place3"> 
+              <input class="form-check-input" type="radio" name="destinations" id="place3"> Praia
+            </label>
+            <label for="place4">
+              <input class="form-check-input" type="radio" name="destinations" id="place4"> Montanha
+            </label>
+        </div>
+        <div class="mb-3">
+          <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? </p>
+          <textarea class="form-control form-control-sm" name="reason" id="question" cols="30" rows="10" maxlength="500" placeholder="Digite sua resposta vencedora aqui"></textarea>
+        </div>
+        <div>
+          <p>Qual a melhor data para realizar sua viagem? </p>
+          <input class="form-control form-control-sm" type="text" id="date" placeholder="dd/mm/aaaa">
+        </div>
+        <br>
+        <div>
+          Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          <input class="form-check-input" type="checkbox" id="promo">
+        </div>
+        <br>
+        <div>
+          <strong>
+            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros * 
+          </strong> 
+          <input class="form-check-input" type="checkbox" id="agreement" required>
+       </div>
+      </div>
+    </div>
+    <div id="btns">
+      <button type="submit" class="btn btn-success" id="submit-btn">Enviar</button>
+      <button type="reset" class="btn btn-secondary" id="clear-btn">Limpar</button>
+    </div>
+  </form>
+  <footer class="footer">
+    <p id="footer-title">Trybe Travel Viagens®</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
