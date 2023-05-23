@@ -1,0 +1,10 @@
+#forms-layout {
+  width: fit-content;
+  border: 1px solid black;
+}
+
+#forms-layout2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
