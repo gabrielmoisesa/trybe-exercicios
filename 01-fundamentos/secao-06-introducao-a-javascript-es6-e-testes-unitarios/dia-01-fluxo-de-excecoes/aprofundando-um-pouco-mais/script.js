@@ -37,6 +37,9 @@ const showPromo = (name, number) => {
       ${productObject.product} no valor de R$ ${productObject.price}`;
   } catch(err) {
     secondText.innerHTML = err.message;
+  } finally {
+  document.querySelector('#name-id').value = "";
+  document.querySelector('#number-id').value = "";
   }
 }
 
