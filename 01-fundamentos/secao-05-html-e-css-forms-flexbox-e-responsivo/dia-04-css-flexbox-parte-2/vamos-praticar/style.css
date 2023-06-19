@@ -12,6 +12,8 @@ body {
 .header-container {
   background-color: #5c687c;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
 }
 
 .logo-container {
