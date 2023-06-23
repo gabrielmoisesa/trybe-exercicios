@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Validador de campos</title>
+  </head>
+  <body>
+    <main>
+        <h1>Validador de campos</h1>
+      <form>
+        <input type="text" id="inputText" placeholder="Insira aqui o valor" />
+        <select name="validacao" id="option">
+          <option value="cpf">CPF</option>
+          <option value="email">E-mail</option>
+          <option value="url">URL</option>
+          <option value="lowercase">Letras minúsculas</option>
+          <option value="number">Número de telefone</option>
+        </select>
+        <button type="submit">Validar</button>
+    </form>
+    <h3 id="result">Digite o valor, escolha a opção e clique em validar</h3>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
