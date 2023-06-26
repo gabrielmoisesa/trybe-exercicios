@@ -1,0 +1,20 @@
+{
+  "name": "api-de-super-herois",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.3",
+    "sweetalert2": "^11.7.12",
+    "vite": "^4.3.9"
+  }
+}
