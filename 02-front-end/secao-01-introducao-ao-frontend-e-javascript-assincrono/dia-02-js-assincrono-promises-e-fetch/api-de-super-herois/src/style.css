@@ -1,0 +1,93 @@
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(255, 0, 0);
+    }
+    16% {
+        border-color: rgb(255, 255, 0);
+    }
+    33% {
+        border-color: rgb(0, 255, 0);
+    }
+    50% {
+        border-color: rgb(0, 255, 255);
+    }
+    66% {
+        border-color: rgb(0, 0, 255);
+    }
+    83% {
+        border-color: rgb(255, 0, 255);
+    }
+    100% {
+        border-color: rgb(255, 0, 0);
+    }
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fefeff;
+    color: #fefeff;
+    margin: 0;
+}
+
+.background-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/assets/shwp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#main-content {
+    height: 70vh;
+    width: 50vh;
+    margin-top: -40px;
+    text-align: center;
+    background-color: rgba(40, 42, 58, 0.85);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    animation: borderAnimation 6s infinite;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    font-size: 38px;
+    margin: 0;
+    padding: 17px;
+}
+
+#image {
+    border-radius: 3px;
+}
+
+#name {
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+#button {
+    border-style: none;
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    background-color: #4E31AA;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 1px;
+}
