@@ -14,7 +14,6 @@ function calculateAge(birthDate: string): number {
     const userBirthDate = new Date(year, month - 1, day);
     let age = currentDate.getFullYear() - userBirthDate.getFullYear();
   
-    // Check if the birthday has already occurred this year
     if (
       currentDate.getMonth() < userBirthDate.getMonth() ||
       (currentDate.getMonth() === userBirthDate.getMonth() &&
