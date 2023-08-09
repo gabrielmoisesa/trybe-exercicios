@@ -7,9 +7,11 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 Os exercícios desse repositório tratam-se de exercicios/práticas realizadas na plataforma do curso durante a formação, portanto, além deles, há muitos projetos/exercicíos que são práticados em reposítórios diferentes, podendo fazer com que alguns conteúdos não estejam necessariamente aqui.
 
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
-Primeiro módulo da Trybe. Nele, aprendi sobre os princípios da Internet, lógica de programação e a programar utilizando as ferramentas e linguagens mais utilizadas pelo mercado de desenvolvimento web. Durante o módulo, fui capaz de desenvolver e praticar o raciocínio aplicado à formulação e resolução de problemas computacionais, criar páginas na web, escrever algoritmos básicos e criar e testar aplicações.
 
-### Tecnologias/Linguages desenvolvidas
+### ℹ️ Sobre
+Primeiro módulo da Trybe. Nele, aprendi sobre os princípios da Internet, lógica de programação e a programar utilizando as ferramentas e linguagens mais utilizadas pelo mercado de desenvolvimento web.   Durante o módulo, fui capaz de desenvolver e praticar o raciocínio aplicado à formulação e resolução de problemas computacionais, criar páginas na web, escrever algoritmos básicos e criar e testar aplicações.
+
+### 🛠️ Tecnologias/Linguages desenvolvidas  
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -18,9 +20,11 @@ Primeiro módulo da Trybe. Nele, aprendi sobre os princípios da Internet, lógi
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
+
+### ℹ️ Sobre
 No módulo Front-end, onde estou atualmente, estudo sobre a projeção, criação, dar vida às páginas de um site ou aplicativo e sobre a compreensão dos princípios do front-end (a interface gráfica do usuário em um site), além de escrever os códigos para montar projetos interativos do zero.
 
-### Tecnologias/Linguages desenvolvidas
+### 🛠️ Tecnologias/Linguages desenvolvidas
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
