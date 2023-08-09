@@ -1,23 +1,28 @@
 import { useState, useEffect } from 'react';
+import fetchJoke from './utils/fetchJoke';
 import './App.css';
 
 function App() {
   const [joke, setJoke] = useState('');
 
   useEffect(() => {
-    async function fetchJoke() {
-      const API_URL = 'https://icanhazdadjoke.com/';
-      const REQUEST_CONFIG = { headers: { Accept: 'application/json' } };
-      const response = await fetch(API_URL, REQUEST_CONFIG);
-      const data = await response.json();
-      setJoke(data.joke)
+    async function getJoke() {
+      const jokes = await fetchJoke()
+      setJoke(jokes.joke)
     }
-    fetchJoke();
+    getJoke();
   }, []);
+
+  const handleClick = async () => {
+    const jokes = await fetchJoke();
+    setJoke(jokes.joke);
+  }
 
   return (
     <div className="App">
+      <h1>Random Joke</h1>
       <p>{joke}</p>
+      <button onClick={ handleClick }>New joke</button>
     </div>
   );
 }
