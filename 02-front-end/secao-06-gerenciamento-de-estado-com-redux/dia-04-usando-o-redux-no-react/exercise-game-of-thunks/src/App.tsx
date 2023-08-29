@@ -2,22 +2,24 @@ import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
 import { Dispatch, ReduxState } from './types'
 import { fetchCharacter } from './redux/actions';
+import React, { useState } from 'react';
 
 function App() {
+  const [inputValue, setInputValue] = useState('')
+
   const rootState = useSelector((state: ReduxState) => state);
   const dispatch: Dispatch = useDispatch();
   const characterName = rootState.character.name;
   const characterBorn = rootState.character.born;
   const characterTitles = rootState.character.titles;
 
-  if (rootState.isFetching) return <p>Carregando...</p>;
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value)
+  }
 
   return (
     <>
-      <input type="text" />
-      <button onClick={() => {
-      dispatch(fetchCharacter('Jon Snow'))
-      }}>Search</button>
+      <h1>Game of Thunks</h1>
       {characterName && (
         <div>
           <h2>{characterName}</h2>
@@ -26,11 +28,16 @@ function App() {
             <h3>Titles:</h3>
             <ul>{characterTitles.map((title) => (
               <li>{title}</li>
-               ))}
+              ))}
             </ul>
           </div>
         </div>
       )}
+      {rootState.isFetching && <p>Carregando...</p>}
+      <input type="text" onChange={handleChange} />
+      <button onClick={() => {
+      dispatch(fetchCharacter(inputValue))
+      }}>Search</button>
     </>
   )
 }
