@@ -28,7 +28,13 @@ export function fetchCharacter() {
       dispatch(requestStarted());
       const response = await fetch('https://anapioficeandfire.com/api/characters?name=Tyrion%20Lannister');
       const data = await response.json();
-      dispatch(requestSuccessful(data))
+      const { name, born, titles } = data
+      const characterData: CharacterType = {
+        name,
+        born,
+        titles
+      }
+      dispatch(requestSuccessful(characterData))
     } catch (error) {
       dispatch(requestFailed(error));
     }

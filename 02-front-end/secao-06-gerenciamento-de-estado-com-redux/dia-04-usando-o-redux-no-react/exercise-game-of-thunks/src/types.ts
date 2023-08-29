@@ -9,7 +9,7 @@ export type CharacterType = {
 
 export type ReduxState = {
   isFetching: boolean;
-  Character: CharacterType;
+  character: CharacterType;
 }
 
 export type Dispatch = ThunkDispatch<ReduxState, void, AnyAction>;
