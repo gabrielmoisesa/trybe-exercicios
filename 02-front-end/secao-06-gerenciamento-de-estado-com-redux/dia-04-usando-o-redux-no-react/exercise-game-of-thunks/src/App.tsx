@@ -9,6 +9,7 @@ function App() {
 
   const rootState = useSelector((state: ReduxState) => state);
   const dispatch: Dispatch = useDispatch();
+  
   const characterName = rootState.character.name;
   const characterBorn = rootState.character.born;
   const characterTitles = rootState.character.titles;
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <h1>Game of Thunks</h1>
-      {characterName && (
+      {rootState.isFound && characterName && (
         <div>
           <h2>{characterName}</h2>
           <p>{characterBorn}</p>
@@ -33,7 +34,8 @@ function App() {
           </div>
         </div>
       )}
-      {rootState.isFetching && <p>Carregando...</p>}
+      {rootState.isFound === false && <p>Character not found.</p>}
+      {rootState.isFetching && <p>Loading...</p>}
       <input type="text" onChange={handleChange} />
       <button onClick={() => {
       dispatch(fetchCharacter(inputValue))

@@ -9,6 +9,7 @@ export type CharacterType = {
 
 export type ReduxState = {
   isFetching: boolean;
+  isFound?: boolean;
   character: CharacterType;
 }
 

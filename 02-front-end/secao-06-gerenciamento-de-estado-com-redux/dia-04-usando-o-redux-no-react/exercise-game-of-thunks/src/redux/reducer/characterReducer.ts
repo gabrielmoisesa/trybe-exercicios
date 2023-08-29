@@ -21,6 +21,7 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: true,
+        isFound: false,
         character: {
           name: '',
           born: '',
@@ -32,6 +33,7 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: false,
+        isFound: true,
         character: action.payload
       };
 
@@ -39,6 +41,7 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: false,
+        isFound: false,
         character: {
           name: '',
           born: '',
