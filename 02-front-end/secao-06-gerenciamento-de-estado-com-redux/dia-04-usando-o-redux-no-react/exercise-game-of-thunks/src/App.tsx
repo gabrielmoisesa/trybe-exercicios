@@ -36,7 +36,7 @@ function App() {
       )}
       {rootState.isFound === false && <p>Character not found.</p>}
       {rootState.isFetching && <p>Loading...</p>}
-      <input type="text" onChange={handleChange} />
+      <input type="text" placeholder='Type a character' onChange={handleChange} />
       <button onClick={() => {
       dispatch(fetchCharacter(inputValue))
       }}>Search</button>
