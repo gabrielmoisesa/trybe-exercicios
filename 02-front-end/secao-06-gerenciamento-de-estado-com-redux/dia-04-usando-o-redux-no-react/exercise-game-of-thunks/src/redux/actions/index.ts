@@ -22,11 +22,11 @@ function requestFailed(error: string | unknown) {
   };
 }
 
-export function fetchCharacter() {
+export function fetchCharacter(characterName: string) {
   return async (dispatch: Dispatch) => {
     try {
       dispatch(requestStarted());
-      const response = await fetch('https://anapioficeandfire.com/api/characters?name=Jon%20Snow');
+      const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${characterName}`);
       const data = await response.json();
       const characterData: CharacterType = {
         name: data[0].name,
