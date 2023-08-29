@@ -26,13 +26,12 @@ export function fetchCharacter() {
   return async (dispatch: Dispatch) => {
     try {
       dispatch(requestStarted());
-      const response = await fetch('https://anapioficeandfire.com/api/characters?name=Tyrion%20Lannister');
+      const response = await fetch('https://anapioficeandfire.com/api/characters?name=Jon%20Snow');
       const data = await response.json();
-      const { name, born, titles } = data
       const characterData: CharacterType = {
-        name,
-        born,
-        titles
+        name: data[0].name,
+        born: data[0].born,
+        titles: data[0].titles,
       }
       dispatch(requestSuccessful(characterData))
     } catch (error) {

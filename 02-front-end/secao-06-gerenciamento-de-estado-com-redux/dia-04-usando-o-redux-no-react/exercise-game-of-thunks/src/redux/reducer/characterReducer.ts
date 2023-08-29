@@ -32,7 +32,7 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: false,
-        character: action.payload,
+        character: action.payload
       };
 
     case REQUEST_FAILED:
