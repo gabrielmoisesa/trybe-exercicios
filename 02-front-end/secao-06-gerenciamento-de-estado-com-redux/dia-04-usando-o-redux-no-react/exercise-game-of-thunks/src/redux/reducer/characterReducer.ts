@@ -1,4 +1,4 @@
-import { ReduxState } from "../../types";
+import { CharacterType, ReduxState } from "../../types";
 import { REQUEST_FAILED, REQUEST_STARTED, REQUEST_SUCCESSFUL } from "../actions";
 
 const initialState: ReduxState = {
@@ -11,7 +11,7 @@ const initialState: ReduxState = {
 };
 
 type ActionType = {
-  payload: string;
+  payload: CharacterType;
   type: string;
 };
 
@@ -21,6 +21,11 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: true,
+        character: {
+          name: '',
+          born: '',
+          titles: [],
+        }
       };
     
     case REQUEST_SUCCESSFUL:
@@ -34,6 +39,11 @@ function characterReducer(state = initialState, action: ActionType) {
       return {
         ...state,
         isFetching: false,
+        character: {
+          name: '',
+          born: '',
+          titles: [],
+        }
       }
 
     default:
