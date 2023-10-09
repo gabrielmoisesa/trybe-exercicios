@@ -19,10 +19,10 @@ Primeiro módulo da Trybe. Nele, aprendi sobre os princípios da Internet, lógi
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ### ℹ️ Sobre
-No módulo Front-end, onde estou atualmente, estudo sobre a projeção, criação, dar vida às páginas de um site ou aplicativo e sobre a compreensão dos princípios do front-end (a interface gráfica do usuário em um site), além de escrever os códigos para montar projetos interativos do zero.
+No módulo Front-end, onde me formei recentemente, estudei sobre a projeção, criação, dar vida às páginas de um site ou aplicativo e sobre a compreensão dos princípios do front-end (a interface gráfica do usuário em um site), além de escrever os códigos para montar projetos interativos do zero.
 
 ### 🛠️ Tecnologias/Linguages desenvolvidas
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -32,6 +32,6 @@ No módulo Front-end, onde estou atualmente, estudo sobre a projeção, criaçã
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-## Desenvolvimento Back-end 🔜:
+## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ## Ciência da Computação 🔜:
