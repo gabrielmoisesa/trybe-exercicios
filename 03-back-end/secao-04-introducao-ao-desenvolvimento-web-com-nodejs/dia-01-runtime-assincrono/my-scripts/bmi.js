@@ -7,6 +7,6 @@ const calculateBMI = (weight, unit, height) => {
   return bmi;
 }
 
-const weight = readline.question("What's your weight? In KG ")
+const weight = readline.questionInt("What's your weight? In KG ")
 const heightUnit = readline.question("Height unit to use: M or CM? ")
 const height = readline.question(`What's your height? In ${heightUnit} `)
