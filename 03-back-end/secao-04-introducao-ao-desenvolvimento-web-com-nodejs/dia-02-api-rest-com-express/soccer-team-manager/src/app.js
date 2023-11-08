@@ -49,6 +49,14 @@ app.get('/teams/:id', (req, res) => {
   if (!team) return res.status(404).json({ message: 'Team not found' });
 
   res.status(200).json({ team });
-})
+});
+
+app.delete('/teams/:id', (req, res) => {
+  const { id } = req.params;
+  const arrayPosition = teams.findIndex((team) => team.id === Number(id));
+  teams.splice(arrayPosition, 1);
+
+  res.status(200).end();
+});
 
 module.exports = app;
