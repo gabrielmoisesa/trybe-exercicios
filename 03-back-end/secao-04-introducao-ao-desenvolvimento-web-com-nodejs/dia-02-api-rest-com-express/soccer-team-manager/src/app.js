@@ -44,11 +44,11 @@ app.put('/teams/:id', (req, res) => {
 app.get('/teams/:id', (req, res) => {
   const { id } = req.params;
 
-  const team = teams.find((team) => team.id === Number(id));
+  const FoundTeam = teams.find((team) => team.id === Number(id));
 
-  if (!team) return res.status(404).json({ message: 'Team not found' });
+  if (!FoundTeam) return res.status(404).json({ message: 'Team not found' });
 
-  res.status(200).json({ team });
+  res.status(200).json({ FoundTeam });
 });
 
 app.delete('/teams/:id', (req, res) => {
