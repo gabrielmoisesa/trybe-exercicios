@@ -47,4 +47,14 @@ const updateMovie = async (id, movie) => {
   }
 }
 
-module.exports = { readMovies, writeMovies, updateMovie };
+const deleteMovie = async (id) => {
+  try {
+    const movies = await readMovies();
+    const deletedMovie = movies.filter((movie) => movie.id !== Number(id));
+    await fs.writeFile(moviesPath, JSON.stringify(deletedMovie));
+  } catch (error) {
+    console.log(`The file couldn't be written. Error: ${error.message}`);
+  }
+}
+
+module.exports = { readMovies, writeMovies, updateMovie, deleteMovie };

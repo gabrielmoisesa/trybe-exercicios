@@ -1,5 +1,5 @@
 const express = require("express");
-const { readMovies, writeMovies, updateMovie } = require("./fsUtils");
+const { readMovies, writeMovies, updateMovie, deleteMovie } = require("./fsUtils");
 
 const app = express();
 app.use(express.json());
@@ -42,6 +42,16 @@ app.put("/movies/:id", async (req, res) => {
     const { id } = req.params;
     await updateMovie(id, req.body);
     res.status(200).json({ message: "Movie updated successfully", newMovie: req.body });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+app.delete("/movies/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    await deleteMovie(id);
+    res.status(200).end();
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
