@@ -12,4 +12,23 @@ const readMovies = async () => {
   }
 };
 
-module.exports = { readMovies };
+const writeMovies = async (movies) => {
+  try {
+    const oldMovies = await readMovies();
+    let newId = oldMovies.length + 1;
+
+    for (let movie of oldMovies) {
+      if (movie.id === newId) newId++;
+    }
+
+    const addedMovies = { ...movies, id: newId };
+    
+    const newMovies = [...oldMovies, addedMovies];
+
+    await fs.writeFile(moviesPath, JSON.stringify(newMovies));
+  } catch (error) {
+    console.log(`The file couldn't be written. Error: ${error.message}`);
+  }
+};
+
+module.exports = { readMovies, writeMovies };
