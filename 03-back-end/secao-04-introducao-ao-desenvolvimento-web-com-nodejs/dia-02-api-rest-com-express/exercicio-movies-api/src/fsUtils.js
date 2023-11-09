@@ -31,4 +31,20 @@ const writeMovies = async (movies) => {
   }
 };
 
-module.exports = { readMovies, writeMovies };
+const updateMovie = async (id, movie) => {
+  try {
+    const movies = await readMovies();
+    const updateMovie = movies.find((movie) => movie.id === Number(id));
+
+    if (!updateMovie) return res.status(404).json({ message: "Movie not found" });
+
+    updateMovie.movie = movie.movie;
+    updateMovie.price = movie.price;
+
+    await fs.writeFile(moviesPath, JSON.stringify(movies));
+  } catch (error) {
+    console.log(`The file couldn't be written. Error: ${error.message}`);
+  }
+}
+
+module.exports = { readMovies, writeMovies, updateMovie };
