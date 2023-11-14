@@ -18,6 +18,8 @@ services:
       MYSQL_PORT: 3306
     depends_on:
       - "database"
+    env_file:
+      - .env
 
   database:
     image: mysql:8.0.29
