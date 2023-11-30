@@ -18,7 +18,11 @@ const create = async (title, author, pageQuantity) => {
 const update = async (id, updatedBook) => {
   const book = await Book.update(updatedBook, { where: { id } });
   return book;
+}
 
+const remove = async (id) => {
+  const book = await Book.destroy({ where: { id } });
+  return book;
 }
 
 module.exports = {
@@ -26,4 +30,5 @@ module.exports = {
   getById,
   create,
   update,
+  remove,
 };
