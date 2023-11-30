@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "env $(cat .env) node index.js",
+    "dev": "nodemon env $(cat .env) index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
     "sequelize": "6.3.4"
   },
   "devDependencies": {
+    "nodemon": "2.0.15",
     "sequelize-cli": "6.6.1"
   }
 }
