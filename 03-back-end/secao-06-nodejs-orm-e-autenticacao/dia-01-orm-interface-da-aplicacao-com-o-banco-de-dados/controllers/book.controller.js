@@ -20,7 +20,22 @@ const getById = async (req, res) => {
   }
 };
 
+const create = async (req, res) => {
+  try {
+    const { title, author, pageQuantity } = req.body;
+    if (!title || !author || !pageQuantity) {
+      return res.status(400).json({ message: 'Invalid data' });
+    }
+    const book = await BookService.create(title, author, pageQuantity);
+    return res.status(201).json(book);
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+
+}
+
 module.exports = {
   getAll,
   getById,
+  create,
 };
