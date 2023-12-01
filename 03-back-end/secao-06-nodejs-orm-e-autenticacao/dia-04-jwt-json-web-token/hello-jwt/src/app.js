@@ -19,6 +19,7 @@ app.use(
 );
 
 app.get('/ping', controllers.ping);
+app.use('/login', controllers.login);
 
 app.use(middlewares.error);
 
