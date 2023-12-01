@@ -23,7 +23,10 @@ router.post('/', (req, res) => {
     algorithm: 'HS256',
   };
 
-  const token = jwt.sign({ data: { username, admin: false } }, secret, jwtConfig);
+  const data = { username, admin: false };
+  if (username === 'admin' && password === 's3nh4S3gur4???') data.admin = true;
+
+  const token = jwt.sign({ data }, secret, jwtConfig);
 
   return res.status(200).json({ token });
 });
