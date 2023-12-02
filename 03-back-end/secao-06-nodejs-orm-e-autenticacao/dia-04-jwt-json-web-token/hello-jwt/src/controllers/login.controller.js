@@ -23,8 +23,11 @@ router.post('/', (req, res) => {
     algorithm: 'HS256',
   };
 
-  const data = { username, admin: false };
-  if (username === 'admin' && password === 's3nh4S3gur4???') data.admin = true;
+  const data = { username, id: Math.floor(Math.random() * 4) + 1, admin: false };
+  if (username === 'admin' && password === 's3nh4S3gur4???') {
+    data.admin = true; 
+    data.id = 0; 
+  }
 
   const token = jwt.sign({ data }, secret, jwtConfig);
 
