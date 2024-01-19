@@ -3,7 +3,7 @@ class Tv {
   private size: number;
   private resolution: string;
   private connections: string[];
-  private connectedTo: string[];
+  private _connectedTo: string;
 
   constructor(
     brand: string,
@@ -15,14 +15,23 @@ class Tv {
     this.size = size;
     this.resolution = resolution;
     this.connections = connections;
-    this.connectedTo = [];
+    this._connectedTo = '';
+  }
+
+  get connectedTo() {
+    return this._connectedTo;
+  }
+
+  set connectedTo(value: string) {
+    if (this.connections.includes(value)) {
+      this._connectedTo = value;
+    } else {
+      console.log('Sorry, connection unavailable!')
+    }
   }
 
   turnOn() {
-    console.log(`
-    Turning on ${this.brand} TV...
-    Connected to ${this.connections[0]}!
-    `);
+    console.log(`Turning on ${this.brand} TV...`);
   }
 }
 
