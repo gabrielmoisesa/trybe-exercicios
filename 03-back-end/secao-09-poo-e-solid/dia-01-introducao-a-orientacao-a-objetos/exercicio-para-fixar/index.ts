@@ -43,3 +43,7 @@ const LGTV = new Tv(
 )
 
 LGTV.turnOn();
+
+LGTV.connectedTo = 'Wi-Fi';
+
+console.log(LGTV.connectedTo);
