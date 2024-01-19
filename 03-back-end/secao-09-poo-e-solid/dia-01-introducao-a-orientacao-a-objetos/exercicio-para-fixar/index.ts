@@ -17,4 +17,8 @@ class Tv {
     this.connections = connections;
     this.connectedTo = [];
   }
+
+  turnOn() {
+    console.log(`Turning on ${this.brand} TV`);
+  }
 }
