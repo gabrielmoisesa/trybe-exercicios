@@ -19,6 +19,18 @@ class Tv {
   }
 
   turnOn() {
-    console.log(`Turning on ${this.brand} TV`);
+    console.log(`
+    Turning on ${this.brand} TV...
+    Connected to ${this.connections[0]}!
+    `);
   }
 }
+
+const LGTV = new Tv(
+  'LG',
+  40,
+  '4k',
+  ['HDMI', 'USB', 'Bluetooth', 'Wi-Fi']
+)
+
+LGTV.turnOn();
