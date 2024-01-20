@@ -10,4 +10,16 @@ class Order {
     this.paymentMethod = paymentMethod;
     this.discount = discount;
   }
+
+  total() {
+    const total = this._items.reduce((acc, curr) => acc + curr.price, 0);
+    return total;
+  }
+
+  totalWithDiscount() {
+    const total = this.total();
+    const discount = total * this.discount;
+    return total - discount;
+  }
 }
+

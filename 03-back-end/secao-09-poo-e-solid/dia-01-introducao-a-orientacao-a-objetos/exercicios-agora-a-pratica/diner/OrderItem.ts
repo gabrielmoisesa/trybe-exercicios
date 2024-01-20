@@ -3,4 +3,6 @@ class OrderItem {
     this._name = _name;
     this._price = _price;
   }
+
+  get price() {return this._price;}
 }
