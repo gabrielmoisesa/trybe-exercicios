@@ -1,4 +1,4 @@
-export class Person {
+export default class Person {
   constructor(private _name: string, private _birthDate: Date) {
     this.validatePerson();
   }
@@ -7,13 +7,13 @@ export class Person {
     return this._name;
   }
 
-  get birthDate() {
-    return this._birthDate;
-  }
-
   set name(name: string) {
     this.validateName(name);
     this.name = name;
+  }
+
+  get birthDate() {
+    return this._birthDate;
   }
 
   set birthDate(birthDate: Date) {
