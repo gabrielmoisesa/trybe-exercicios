@@ -4,7 +4,7 @@ export default abstract class Character {
   abstract specialMove(): void;
 
   static introduce(character: Character) {
-    character.talk;
-    character.specialMove;
+    character.talk();
+    character.specialMove();
   }
 }

@@ -1,13 +1,12 @@
 import MeleeCharacter from "./MeleeCharacter";
 import LongRangeCharacter from "./LongRangeCharacter";
+import Character from "./Character";
 
 const yoshi = new MeleeCharacter();
 const samus = new LongRangeCharacter();
 
 console.log("===== Yoshi =====");
-yoshi.talk();
-yoshi.specialMove();
+Character.introduce(yoshi);
 
 console.log("===== Samus =====");
-samus.talk();
-samus.specialMove();
+Character.introduce(samus);
