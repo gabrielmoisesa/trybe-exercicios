@@ -1,5 +1,5 @@
-import IAgenda from "./interfaces/IAgenda";
+import { IAgenda } from "./interfaces/IAgenda";
 
-export default abstract class Quadra {
+export abstract class Quadra {
   protected abstract reservar<T>(data: Date): IAgenda<T>;
 }

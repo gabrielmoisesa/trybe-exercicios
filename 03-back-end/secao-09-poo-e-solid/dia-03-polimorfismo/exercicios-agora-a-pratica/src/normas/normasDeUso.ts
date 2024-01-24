@@ -1,4 +1,4 @@
-const normas = {
+export const normas = {
   tenis: {
     piso: "saibro",
     dupla: true,
@@ -7,5 +7,3 @@ const normas = {
     chuteira: "trava",
   },
 };
-
-export default normas;

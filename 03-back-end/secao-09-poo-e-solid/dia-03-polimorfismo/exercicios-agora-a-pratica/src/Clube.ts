@@ -1,6 +1,6 @@
-import Quadra from "./Quadra";
+import { Quadra } from "./Quadra";
 
-export default class Clube {
+export class Clube {
   private quadras: Quadra[] = [];
 
   public adicionarQuadra(quadra: Quadra) {
