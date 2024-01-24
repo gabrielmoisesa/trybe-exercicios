@@ -8,7 +8,7 @@ export class QuadraFutebol extends Quadra {
 
   reservar<IFutebol>(data: Date): IAgenda<IFutebol> {
     return {
-      protocolo: Math.random().toString(36).substring(2, 12),
+      protocolo: Quadra.generateProtocol(),
       data,
       regras: QuadraFutebol.futebolData as IFutebol,
     };
